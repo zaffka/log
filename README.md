@@ -1,2 +1,2 @@
-# log
-log package
+#Logger
+Logger wrapper with zap logger realization
