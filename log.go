@@ -7,6 +7,7 @@ type Logger interface {
 	Info(...interface{})
 	Infow(string, ...interface{})
 	Error(...interface{})
+	Errorw(string, ...interface{})
 }
 
 //FlusherFn function to close the logger and flush all pending records before exiting the app
