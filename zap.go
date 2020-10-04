@@ -7,8 +7,6 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
-// TODO: добавить настройку zap в зависимости от окружения
-
 func newZap(routineID string, writer io.Writer) *zap.SugaredLogger {
 	conf := zap.NewDevelopmentEncoderConfig()
 	conf.EncodeTime = zapcore.RFC3339TimeEncoder

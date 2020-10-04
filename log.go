@@ -10,6 +10,8 @@ type Logger interface {
 	Errorw(string, ...interface{})
 	Warn(...interface{})
 	Warnw(string, ...interface{})
+	Debug(...interface{})
+	Debugw(string, ...interface{})
 }
 
 //FlusherFn function to close the logger and flush all pending records before exiting the app
